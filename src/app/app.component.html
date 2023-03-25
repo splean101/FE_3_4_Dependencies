@@ -3,11 +3,7 @@
         <app-header></app-header>
     </header>
     <main>
-        <app-user 
-        *ngFor="let user of users"
-        [name]="user.name"
-        [status]="user.status"
-        [img]="user.url"
-        ></app-user>
+        <app-user *ngFor="let user of UsersService.users" [name]="user.name" [status]="user.status"
+            [img]="user.url"></app-user>
     </main>
 </div>
